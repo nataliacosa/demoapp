@@ -1,4 +1,6 @@
 Demoapp::Application.routes.draw do
+  resources :tweets
+
   get "static_pages/home"
   get "static_pages/help"
   root 'static_pages#home'
