@@ -9,8 +9,9 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-<strong> All Tweets:<strong> <br>
-  <%@user.tweets.each.do |singletweet| %>
+<p>
+<strong> All Tweets:</strong> <br>
+  <% @user.tweets.each do |singletweet| %>
   <%=singletweet.status %> <br>
   <% end %>
   </p>
